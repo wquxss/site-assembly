@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f4f8">
+  <meta name="description" content="Watch nine simulated agents assemble this interface, from brief to review.">
+  <title>Agent Lab · Site Assembly</title>
+  <link rel="stylesheet" href="./lab.css">
+  <link rel="stylesheet" href="../skills/site-assembly/assets/starter/agent-build.css">
+  <script type="module" src="./lab.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="lab-header" data-tour-persistent>
+    <div class="frame mast">
+      <a class="wordmark" href="#top"><i aria-hidden="true"></i>Agent Lab</a>
+      <nav aria-label="Page sections"><a href="#workflow">Workflow</a><a href="#review">Review</a></nav>
+      <a class="repo" href="https://github.com/wquxss/site-assembly">GitHub <span class="arrow" aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero chapter" id="top" data-tour-section="brief" aria-labelledby="title">
+      <div class="frame hero-layout">
+        <div class="hero-copy">
+          <h1 id="title" data-tour-job="copy">One brief.<br><span>Nine agents.</span></h1>
+          <p data-tour-job="copy">Watch a team of simulated AI agents turn a brief into the page you’re looking at.</p>
+          <a class="action" href="#workflow" data-tour-job="dev">Explore the workflow <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="workbench" aria-label="Assembly workbench">
+          <div class="bench-head" data-tour-job="design"><span><i></i> Assembly workbench</span><span>Example run</span></div>
+          <div class="board">
+            <div class="connector connector-top" aria-hidden="true"></div>
+            <div class="connector connector-bottom" aria-hidden="true"></div>
+            <div class="node node-start" data-tour-job="design"><span>IN</span> Project brief</div>
+            <div class="node node-layout" data-tour-job="design"><span>01</span> Layout</div>
+            <div class="node node-copy" data-tour-job="design"><span>02</span> Copy</div>
+            <div class="node node-build" data-tour-job="design"><span>03</span> Build</div>
+            <div class="node node-final" data-tour-job="dev"><span>OUT</span> Interface review</div>
+          </div>
+          <div class="bench-foot" data-tour-job="copy">One shared plan. Three parallel workstreams.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="workflow chapter" id="workflow" data-tour-section="workflow" aria-labelledby="workflow-title">
+      <div class="frame chapter-layout">
+        <div>
+          <h2 id="workflow-title" data-tour-job="copy">From brief<br>to build.</h2>
+          <p class="chapter-lead" data-tour-job="copy">Agents share the same plan and work in parallel. The page advances once the current work is in place.</p>
+        </div>
+        <ol class="queue" aria-label="Workflow steps">
+          <li data-tour-job="design"><span>01</span><div><h3>Read the brief</h3><p>Agree on the goal, content and constraints.</p></div></li>
+          <li data-tour-job="design"><span>02</span><div><h3>Divide the work</h3><p>Assign layout, copy and implementation.</p></div></li>
+          <li data-tour-job="design"><span>03</span><div><h3>Assemble the page</h3><p>Bring each piece into its place on the page.</p></div></li>
+          <li data-tour-job="design"><span>04</span><div><h3>Review together</h3><p>Check the result and leave the site ready to use.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="review chapter" id="review" data-tour-section="review" aria-labelledby="review-title">
+      <div class="frame chapter-layout">
+        <div>
+          <h2 id="review-title" data-tour-job="copy">Ready for<br>review.</h2>
+          <p class="chapter-lead" data-tour-job="copy">The assembled interface is a real page. Pause the tour at any point to explore it at your own pace.</p>
+          <a class="action" href="https://github.com/wquxss/site-assembly" data-tour-job="dev">Get Site Assembly <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="review-sheet">
+          <h3 data-tour-job="copy">Review checklist</h3>
+          <ul>
+            <li data-tour-job="design"><i aria-hidden="true"></i> Layout follows the brief</li>
+            <li data-tour-job="design"><i aria-hidden="true"></i> Content reads in order</li>
+            <li data-tour-job="design"><i aria-hidden="true"></i> Navigation is ready to use</li>
+          </ul>
+          <p data-tour-job="copy">Illustrative run. The cursors are simulated in your browser.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="lab-footer" data-tour-section="credits">
+    <div class="frame mast"><span data-tour-job="copy">Site Assembly</span><div><a href="https://shinedsgn.ru/" data-tour-job="dev">shinedsgn.ru ↗</a><a href="https://t.me/shinecode" data-tour-job="dev">Telegram ↗</a></div></div>
+  </footer>
+  <button class="agent-tour" type="button" data-agent-tour hidden>
+    <span class="agent-tour-icon" aria-hidden="true"></span><span data-agent-tour-label>Pause tour</span>
+  </button>
+</body>
+</html>

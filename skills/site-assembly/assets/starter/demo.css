@@ -1,0 +1,33 @@
+:root {
+  color-scheme: light;
+  --bg: #fff;
+  --ink: #132344;
+  --muted: #4b5972;
+  --accent: #256ec7;
+  font: 16px/1.55 system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); }
+.mono { font-family: ui-monospace, monospace; }
+a { color: var(--accent); }
+.demo-scene {
+  max-width: 86rem;
+  margin-inline: auto;
+  padding: clamp(2rem, 8vh, 5rem) clamp(1rem, 5vw, 5rem) clamp(3rem, 9vh, 6rem);
+}
+html[data-agent-tour-running] .demo-scene { min-block-size: 100svh; }
+h1, h2, p { margin: 0 0 1rem; }
+h1 { max-width: 11ch; font-size: clamp(3rem, 10vw, 9rem); line-height: .94; letter-spacing: -.065em; }
+h2 { font-size: clamp(2rem, 5vw, 4.5rem); line-height: 1; letter-spacing: -.045em; }
+.demo-scene > p { font-size: clamp(1.05rem, 2vw, 1.4rem); color: var(--muted); }
+.demo-intro nav, .demo-disciplines { display: flex; flex-wrap: wrap; gap: .6rem 1rem; margin-block: 1rem; }
+.demo-disciplines span { padding: .3rem .6rem; border: 1px solid #413651; border-radius: 4px; }
+.demo-intro {
+  --accent: #fff;
+  --muted: #ebf2ff;
+  background: #1b79f5;
+  color: #fff;
+}
+.demo-intro .demo-disciplines span { border-color: #ffffff55; }
+#motion { background: #f9edf9; }

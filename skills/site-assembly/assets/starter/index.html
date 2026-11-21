@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site Assembly</title>
+  <link rel="stylesheet" href="./demo.css">
+  <link rel="stylesheet" href="./agent-build.css">
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <button class="agent-tour mono" type="button" data-agent-tour hidden>
+    <span class="agent-tour-icon" aria-hidden="true"></span>
+    <span data-agent-tour-label>приостановить тур</span>
+  </button>
+  <main>
+    <section class="demo-scene demo-intro" data-tour-section="intro" aria-labelledby="intro">
+      <h1 id="intro" data-tour-job="copy">Форма в движении</h1>
+      <p data-tour-job="copy">Интерактивная графика для цифровых проектов.</p>
+      <nav aria-label="разделы">
+        <a href="#motion" data-tour-job="dev">Смотреть графику</a>
+        <a href="#contact" data-tour-job="dev">Контакты</a>
+      </nav>
+      <div class="demo-disciplines" aria-label="направления работы">
+        <span data-tour-job="design">Арт-дирекшн</span>
+        <span data-tour-job="design">Моушн</span>
+        <span data-tour-job="design">Веб</span>
+        <span data-tour-job="copy">Интерактив</span>
+        <span data-tour-job="dev">Прототипы</span>
+      </div>
+    </section>
+    <section class="demo-scene" data-tour-section="motion" id="motion" aria-labelledby="motion-heading">
+      <h2 id="motion-heading" data-tour-job="copy">Моушн</h2>
+      <p data-tour-job="copy">Анимация интерфейсов и интерактивная графика.</p>
+    </section>
+    <section class="demo-scene" data-tour-section="contact" id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" data-tour-job="copy">Обсудим проект</h2>
+      <p data-tour-job="copy">Расскажи, что должно ожить на экране.</p>
+      <a href="mailto:hello@example.com" data-tour-job="dev">Написать</a>
+    </section>
+  </main>
+</body>
+</html>

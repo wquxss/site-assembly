@@ -1,0 +1,3 @@
+interface:
+  display_name: "Site Assembly"
+  short_description: "Сборка сайта девятью ИИ-агентами"
